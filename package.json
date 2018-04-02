@@ -1,0 +1,21 @@
+{
+    "name": "backend-server",
+    "version": "1.0.0",
+    "description": "Servidor Backend de aplicacion operaciones",
+    "main": "index.js",
+    "scripts": {
+        "start": "nodemon app.js",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "vixar",
+    "license": "ISC",
+    "dependencies": {
+        "bcrypt": "^1.0.3",
+        "bcryptjs": "^2.4.3",
+        "body-parser": "^1.18.2",
+        "express": "^4.16.3",
+        "jsonwebtoken": "^8.2.0",
+        "mongoose": "^5.0.11",
+        "mongoose-unique-validator": "^2.0.0"
+    }
+}
