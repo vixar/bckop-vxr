@@ -38,9 +38,11 @@ mongoose.connection.openUri('mongodb://localhost:27017/operacionesDB', (err, res
 var appRoutes = require('./Routes/app');
 var userRoutes = require('./Routes/user');
 var loginRoutes = require('./Routes/login');
-var clienteRoutes = require('./Routes/cliente');
 var hospitalRoutes = require('./Routes/hospital');
 var medicoRoutes = require('./Routes/medico');
+var busquedaRoutes = require('./Routes/busqueda');
+var uploadRoutes = require('./Routes/upload');
+var imagenesRoutes = require('./Routes/imagenes');
 
 
 
@@ -49,8 +51,11 @@ var medicoRoutes = require('./Routes/medico');
 app.use('/user', userRoutes);
 app.use('/login', loginRoutes);
 app.use('/hospital', hospitalRoutes);
-app.use('/cliente', clienteRoutes);
 app.use('/medico', medicoRoutes);
+app.use('/busqueda', busquedaRoutes);
+app.use('/upload', uploadRoutes);
+app.use('/img', imagenesRoutes);
+
 app.use('/', appRoutes);
 
 
